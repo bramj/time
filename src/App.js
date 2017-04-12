@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Question from './components/Question';
+import React, { Component } from 'react'
+import Question from './components/Question'
+import './styles.min.css'
 
 class App extends Component {
   render() {
