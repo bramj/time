@@ -1,0 +1,15 @@
+[
+  { "question" : "SDG?",
+    "answers" : [
+      {"label": "Yes", "value": "yes"},
+      {"label": "No", "value": "no"}
+    ]
+  },
+  { "question" : "SDG2?",
+    "answers" : [
+      {"label": "Yes", "value": "yes"},
+      {"label": "No", "value": "no"},
+      {"label": "Dunno", "value": "dunno"}
+    ]
+  }
+]
