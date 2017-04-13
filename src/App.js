@@ -7,7 +7,8 @@ class App extends Component {
     super (props)
     this.state = {
       questions: require('./questions.json'),
-      current_question_index: 0
+      current_question_index: 0,
+      selected: null
     }
   }
 
@@ -15,12 +16,23 @@ class App extends Component {
     return this.state.questions[this.state.current_question_index]
   }
 
+  handleSubmit (event) {
+    debugger
+  }
+
+  handleAnswerChange (event) {
+    this.setState({selected: parseInt(event.target.value)})
+  }
+
   render() {
     return (
       <div className="container">
         <div className="clearfix">
           <Question question={this.currentQuestion().question}
-                    answers={this.currentQuestion().answers} />
+                    answers={this.currentQuestion().answers}
+                    selected={this.state.selected}
+                    onSubmit={this.handleSubmit.bind(this)}
+                    onAnswerChange={this.handleAnswerChange.bind(this)} />
         </div>
       </div>
     )

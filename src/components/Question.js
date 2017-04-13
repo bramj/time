@@ -8,18 +8,25 @@ class Question extends React.Component {
 
   render() {
     const answers = this.props.answers.map((answer) =>
-      <Radio name="answers" label={answer.label} value={answer.value} />
+      <Radio name="answers"
+             label={answer.label}
+             value={answer.value}
+             key={answer.value}
+             checked={this.props.selected === answer.value}
+             onChange={this.props.onAnswerChange} />
     )
 
     return (
       <Row>
         <Col sm="1/3">
-          <Form>
+          <Form ref="question_form">
           <h2 className='m2'>
             {this.props.question}
           </h2>
           {answers}
-          <Button size="lg">Submit</Button>
+          <Button size="lg" onClick={this.props.onSubmit}>
+            Submit
+          </Button>
           </Form>
         </Col>
       </Row>

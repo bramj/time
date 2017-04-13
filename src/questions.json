@@ -1,15 +1,35 @@
 [
-  { "question" : "SDG?",
+  { "question" : "How many hours do you work per week?",
     "answers" : [
-      {"label": "Yes", "value": "yes"},
-      {"label": "No", "value": "no"}
+      {"label": "60h", "value": 60},
+      {"label": "50h", "value": 50},
+      {"label": "40h", "value": 40},
+      {"label": "38h", "value": 38},
+      {"label": "35h", "value": 35},
+      {"label": "30h", "value": 30},
+      {"label": "20h", "value": 20}
     ]
   },
-  { "question" : "SDG2?",
+  { "question" : "How many days a week?",
     "answers" : [
-      {"label": "Yes", "value": "yes"},
-      {"label": "No", "value": "no"},
-      {"label": "Dunno", "value": "dunno"}
+      {"label": "5", "value": 5},
+      {"label": "4", "value": 4},
+      {"label": "3", "value": 3},
+      {"label": "2.5", "value": 2.5},
+      {"label": "2", "value": 2}
+    ]
+  },
+  { "question" : "How long do you commute per day?",
+    "answers" : [
+      {"label": "0m", "value": 0},
+      {"label": "10m", "value": 10},
+      {"label": "20m", "value": 20},
+      {"label": "30m", "value": 30},
+      {"label": "40m", "value": 40},
+      {"label": "50m", "value": 50},
+      {"label": "1h", "value": 60},
+      {"label": "1h15", "value": 75},
+      {"label": "1h30", "value": 90}
     ]
   }
 ]
